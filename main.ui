@@ -41,76 +41,11 @@
      <string notr="true">border:none;</string>
     </property>
     <property name="verticalScrollBarPolicy">
-     <enum>Qt::ScrollBarAlwaysOn</enum>
+     <enum>Qt::ScrollBarAlwaysOff</enum>
     </property>
     <property name="horizontalScrollBarPolicy">
      <enum>Qt::ScrollBarAlwaysOff</enum>
     </property>
-    <item>
-     <property name="text">
-      <string>Ali</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>в</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>в</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>в</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>в</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>New Item</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>f</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>f</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>f</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>New Item</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>f</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>VK</string>
-     </property>
-    </item>
    </widget>
    <widget class="QPushButton" name="copyBtn">
     <property name="geometry">
