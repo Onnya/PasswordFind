@@ -81,10 +81,10 @@ border-width:2px;}</string>
    <widget class="QPushButton" name="changeBtn">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>440</y>
+      <x>300</x>
+      <y>430</y>
       <width>121</width>
-      <height>51</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -113,9 +113,9 @@ border-width:2px;}</string>
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>440</y>
+      <y>470</y>
       <width>121</width>
-      <height>51</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -224,6 +224,37 @@ border-width:2px;}</string>
     </property>
     <property name="text">
      <string>Import</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showBtn">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>440</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:pressed { background-color: #5DC8CD }
+QPushButton {
+background-color:#03899C;
+border-radius:12px;
+border-style: solid;
+border-color:#015965;
+border-width:2px;}</string>
+    </property>
+    <property name="text">
+     <string>Show/Hide</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
