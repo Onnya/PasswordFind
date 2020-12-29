@@ -23,9 +23,9 @@ class AddEditWindow(QMainWindow):
             else:
                 if (check_pswrd(self.passwordLn.text()) == True) and (self.nameLn.text() != ""):
                     cur.execute("INSERT INTO main(name,password) VALUES(?,?)",
-                                (self.nameLn.text(), self.passwordLn.text()))
+                                (str(self.nameLn.text()), self.passwordLn.text()))
                     self.con.commit()
-                    self.hide()
+                    self.close()
                 elif self.nameLn.text() == "":
                     self.statusBar().showMessage("Empty title.")
                 else:
