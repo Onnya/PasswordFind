@@ -76,7 +76,7 @@ border-width:2px;}</string>
     <property name="font">
      <font>
       <family>Dubai</family>
-      <pointsize>10</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -117,7 +117,7 @@ border-width:2px;}</string>
     <property name="font">
      <font>
       <family>Dubai</family>
-      <pointsize>10</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="styleSheet">
