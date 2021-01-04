@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QWidget, QApplication, QMainWindow
 from addeditwindow import AddEditWindow
 import sqlite3
 import os.path
-from passwordtools import make_key
+from passwordtools import make_key, take_pr_key, take_pub_key, encrypt_pswrd, decrypt_pswrd
 
 
 class MainWindow(QMainWindow):
@@ -52,7 +52,7 @@ class MainWindow(QMainWindow):
         self.listWidget.clear()
         cur = self.con.cursor()
         result = cur.execute("SELECT name FROM main").fetchall()
-        result.sort()
+        result.sort(key=lambda x: str(x))
         for i in result:
             self.listWidget.addItem(str(i[0]))
 
@@ -62,7 +62,8 @@ class MainWindow(QMainWindow):
             cur = self.con.cursor()
             result = cur.execute("SELECT password FROM main WHERE name=?",
                                  (name,)).fetchall()
-            subprocess.Popen(['clip'], stdin=subprocess.PIPE).communicate(bytes(result[0][0], encoding='utf8'))
+            subprocess.Popen(['clip'], stdin=subprocess.PIPE).communicate(
+                bytes(decrypt_pswrd(result[0][0], take_pr_key()), encoding='utf8'))
         else:
             self.statusBar().showMessage("Name not selected", 2000)
 
@@ -72,7 +73,7 @@ class MainWindow(QMainWindow):
             cur = self.con.cursor()
             result = cur.execute("SELECT password FROM main WHERE name=?",
                                  (name,)).fetchall()
-            self.statusBar().showMessage(result[0][0], 3000)
+            self.statusBar().showMessage(decrypt_pswrd(result[0][0], take_pr_key()), 3000)
         else:
             self.statusBar().showMessage("Name not selected", 2000)
 
@@ -94,6 +95,6 @@ if __name__ == '__main__':
     ex.show()
     sys.exit(app.exec())
 
-# TODO: шифровка
+# TODO: шифровка change
 # TODO: импорт экспорт
 # TODO: загрузка с паролем (?)
