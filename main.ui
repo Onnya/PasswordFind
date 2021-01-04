@@ -251,7 +251,7 @@ border-color:#015965;
 border-width:2px;}</string>
     </property>
     <property name="text">
-     <string>Show/Hide</string>
+     <string>Show</string>
     </property>
     <property name="flat">
      <bool>false</bool>
