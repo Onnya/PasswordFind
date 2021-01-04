@@ -35,7 +35,7 @@ class AddEditWindow(QMainWindow):
                 cur.execute('''UPDATE main
                 SET password = ?
                 WHERE name = ?
-                ''', (self.passwordLn.text(), self.nameLn.text()))
+                ''', (encrypt_pswrd(self.passwordLn.text(), take_pub_key()), self.nameLn.text()))
                 self.con.commit()
                 self.close()
             else:
