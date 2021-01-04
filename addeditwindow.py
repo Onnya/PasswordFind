@@ -1,7 +1,7 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QWidget, QApplication, QMainWindow
 import sqlite3
-from passwordtools import check_pswrd, gen_pswrd
+from passwordtools import check_pswrd, gen_pswrd, take_pr_key, take_pub_key, encrypt_pswrd, decrypt_pswrd
 
 
 class AddEditWindow(QMainWindow):
@@ -23,7 +23,7 @@ class AddEditWindow(QMainWindow):
             else:
                 if (check_pswrd(self.passwordLn.text()) == True) and (self.nameLn.text() != ""):
                     cur.execute("INSERT INTO main(name,password) VALUES(?,?)",
-                                (str(self.nameLn.text()), self.passwordLn.text()))
+                                (str(self.nameLn.text()), encrypt_pswrd(self.passwordLn.text(), take_pub_key())))
                     self.con.commit()
                     self.close()
                 elif self.nameLn.text() == "":

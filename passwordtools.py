@@ -23,7 +23,7 @@ def gen_pswrd():
 
 
 def encrypt_pswrd(password, pubkey):
-    crypto = rsa.encrypt(bytes(password), pubkey)
+    crypto = rsa.encrypt(bytes(password, encoding="utf-8"), pubkey)
     return crypto
 
 
@@ -38,10 +38,15 @@ def make_key():
     PEM_pr = pr.save_pkcs1('PEM')
     with open('public.pem', 'wb') as key_file:
         key_file.write(PEM_pub)
-    with open('privat.pem', 'wb') as key_file:
+    with open('private.pem', 'wb') as key_file:
         key_file.write(PEM_pr)
 
 
-def take_key():
+def take_pr_key():
     with open('private.pem', 'rb') as key_file:
+        return rsa.PrivateKey.load_pkcs1(key_file.read(), 'PEM')
+
+
+def take_pub_key():
+    with open('public.pem', 'rb') as key_file:
         return rsa.PublicKey.load_pkcs1(key_file.read(), 'PEM')
