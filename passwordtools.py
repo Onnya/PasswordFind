@@ -1,4 +1,5 @@
 from xkcdpass import xkcd_password as xp
+
 import rsa
 
 
@@ -17,9 +18,9 @@ def check_pswrd(pswrd):
 
 
 def gen_pswrd():
-    wordfile = xp.locate_wordfile()
-    mywords = xp.generate_wordlist(wordfile=wordfile, min_length=5, max_length=7)
-    return xp.generate_xkcdpassword(mywords, numwords=4, delimiter="-", case='random')
+    word_file = xp.locate_wordfile()
+    my_words = xp.generate_wordlist(wordfile=word_file, min_length=5, max_length=7)
+    return xp.generate_xkcdpassword(my_words, numwords=4, delimiter="-", case='random')
 
 
 def encrypt_pswrd(password, pubkey):
@@ -34,12 +35,12 @@ def decrypt_pswrd(crypto, prkey):
 
 def make_key():
     (pub, pr) = rsa.newkeys(512)
-    PEM_pub = pub.save_pkcs1('PEM')
-    PEM_pr = pr.save_pkcs1('PEM')
+    pem_pub = pub.save_pkcs1('PEM')
+    pem_pr = pr.save_pkcs1('PEM')
     with open('public.pem', 'wb') as key_file:
-        key_file.write(PEM_pub)
+        key_file.write(pem_pub)
     with open('private.pem', 'wb') as key_file:
-        key_file.write(PEM_pr)
+        key_file.write(pem_pr)
 
 
 def take_pr_key():
