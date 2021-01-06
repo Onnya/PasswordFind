@@ -88,6 +88,13 @@ class MainWindow(QMainWindow):
         else:
             self.statusBar().showMessage("Name not selected", 2000)
 
+    def export(self):
+        name = datetime.now().strftime("%d/%m/%y-%H:%M:%S")
+        self.statusBar().showMessage(f"Saved as {name}.csv", 2500)
+
+        cur = self.con.cursor()
+        result = cur.execute("SELECT name, password FROM main").fetchall()
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
