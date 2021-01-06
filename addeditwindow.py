@@ -8,6 +8,10 @@ class AddEditWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__()
         uic.loadUi('addeditwindow.ui', self)
+
+        self.setWindowIcon(QtGui.QIcon('img.png'))
+        self.setWindowTitle("PasswordFind")
+        self.setAttribute(Qt.WA_QuitOnClose, False)
         self.setFixedSize(319, 304)
         self.con = sqlite3.connect("passwords.sqlite")
         self.generateBtn.clicked.connect(self.generated_password)
