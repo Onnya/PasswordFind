@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>442</width>
-    <height>538</height>
+    <width>446</width>
+    <height>547</height>
    </rect>
   </property>
   <property name="font">
@@ -20,7 +20,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color: #5FC0CE;</string>
+    <string notr="true">background-color: #CED4DA;</string>
    </property>
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
@@ -63,12 +63,12 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton:pressed { background-color: #5DC8CD }
+     <string notr="true">QPushButton:pressed { background-color: #495057 }
 QPushButton {
-background-color:#03899C;
+background-color:#6C757D;
 border-radius:12px;
 border-style: solid;
-border-color:#015965;
+border-color:#343A40;
 border-width:2px;}</string>
     </property>
     <property name="text">
@@ -94,12 +94,12 @@ border-width:2px;}</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton:pressed { background-color: #5DC8CD }
+     <string notr="true">QPushButton:pressed { background-color: #495057 }
 QPushButton {
-background-color:#03899C;
+background-color:#6C757D;
 border-radius:12px;
 border-style: solid;
-border-color:#015965;
+border-color:#343A40;
 border-width:2px;}</string>
     </property>
     <property name="text">
@@ -125,12 +125,12 @@ border-width:2px;}</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton:pressed { background-color: #5DC8CD }
+     <string notr="true">QPushButton:pressed { background-color: #495057 }
 QPushButton {
-background-color:#03899C;
+background-color:#6C757D;
 border-radius:12px;
 border-style: solid;
-border-color:#015965;
+border-color:#343A40;
 border-width:2px;}</string>
     </property>
     <property name="text">
@@ -158,13 +158,14 @@ border-width:2px;}</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton:pressed { background-color: #BF7530 }
+     <string notr="true">QPushButton:pressed { background-color: #212529 }
 QPushButton {
-background-color:#FF9B40;
+background-color:#343A40;
 border-radius:9px;
 border-style: solid;
-border-color:#FF7A00;
-border-width:2px;}</string>
+border-color:#212529;
+border-width:2px;
+color:#E9ECEF}</string>
     </property>
     <property name="text">
      <string>Add password</string>
@@ -186,16 +187,17 @@ border-width:2px;}</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton:pressed { background-color: #BF7530 }
+     <string notr="true">QPushButton:pressed { background-color: #212529 }
 QPushButton {
-background-color:#FF9B40;
+background-color:#343A40;
 border-radius:9px;
 border-style: solid;
-border-color:#FF7A00;
-border-width:2px;}</string>
+border-color:#212529;
+border-width:2px;
+color:#E9ECEF}</string>
     </property>
     <property name="text">
-     <string>Export</string>
+     <string>Export csv</string>
     </property>
    </widget>
    <widget class="QPushButton" name="importBtn">
@@ -214,16 +216,17 @@ border-width:2px;}</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton:pressed { background-color: #BF7530 }
+     <string notr="true">QPushButton:pressed { background-color: #212529 }
 QPushButton {
-background-color:#FF9B40;
+background-color:#343A40;
 border-radius:9px;
 border-style: solid;
-border-color:#FF7A00;
-border-width:2px;}</string>
+border-color:#212529;
+border-width:2px;
+color:#E9ECEF}</string>
     </property>
     <property name="text">
-     <string>Import</string>
+     <string>Import csv</string>
     </property>
    </widget>
    <widget class="QPushButton" name="showBtn">
@@ -242,12 +245,12 @@ border-width:2px;}</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton:pressed { background-color: #5DC8CD }
+     <string notr="true">QPushButton:pressed { background-color: #495057 }
 QPushButton {
-background-color:#03899C;
+background-color:#6C757D;
 border-radius:12px;
 border-style: solid;
-border-color:#015965;
+border-color:#343A40;
 border-width:2px;}</string>
     </property>
     <property name="text">
@@ -260,7 +263,7 @@ border-width:2px;}</string>
   </widget>
   <widget class="QStatusBar" name="statusbar">
    <property name="styleSheet">
-    <string notr="true">background-color:#36BBCE</string>
+    <string notr="true">background-color:#ADB5BD</string>
    </property>
   </widget>
  </widget>

@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>319</width>
-    <height>304</height>
+    <width>323</width>
+    <height>313</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: #5FC0CE;</string>
+   <string notr="true">background-color: #CED4DA;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="okBtn">
@@ -33,13 +33,14 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton:pressed { background-color: #BF7530 }
+     <string notr="true">QPushButton:pressed { background-color: #212529 }
 QPushButton {
-background-color:#FF9B40;
+background-color:#343A40;
 border-radius:9px;
 border-style: solid;
-border-color:#FF7A00;
-border-width:2px;}</string>
+border-color:#212529;
+border-width:2px;
+color:#E9ECEF}</string>
     </property>
     <property name="text">
      <string>Ok</string>
@@ -80,7 +81,7 @@ border-width:2px;}</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:#04859D;border:none;</string>
+     <string notr="true">background-color:#ADB5BD;border:none;</string>
     </property>
     <property name="text">
      <string/>
@@ -121,7 +122,7 @@ border-width:2px;}</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:#04859D;border:none;</string>
+     <string notr="true">background-color:#ADB5BD;border:none;</string>
     </property>
     <property name="text">
      <string/>
@@ -143,13 +144,14 @@ border-width:2px;}</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton:pressed { background-color: #BF7530 }
+     <string notr="true">QPushButton:pressed { background-color: #212529 }
 QPushButton {
-background-color:#FF9B40;
+background-color:#343A40;
 border-radius:9px;
 border-style: solid;
-border-color:#FF7A00;
-border-width:2px;}</string>
+border-color:#212529;
+border-width:2px;
+color:#E9ECEF}</string>
     </property>
     <property name="text">
      <string>Generate</string>
@@ -158,7 +160,7 @@ border-width:2px;}</string>
   </widget>
   <widget class="QStatusBar" name="statusbar">
    <property name="styleSheet">
-    <string notr="true">background-color:#36BBCE</string>
+    <string notr="true">background-color:#ADB5BD</string>
    </property>
   </widget>
  </widget>
