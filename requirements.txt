@@ -1,3 +1,0 @@
-PyQt5>=5.15
-rsa>=4.6
-xkcdpass>=1.17
